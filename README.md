@@ -16,19 +16,27 @@ Installation
 
  1. Create Virtualenv (because, you know, best practices and all that) ::
 
-      $ mkvirtualenv pixieland
+    ```bash
+    $ mkvirtualenv pixieland
+    ```
 
  2. Install GAE SDK into the virtualenv the only way you know how ::
  
-      $ pip install git+https://github.com/xlevus/gae-setuptools.git
+    ```bash
+    $ pip install git+https://github.com/xlevus/gae-setuptools.git
+    ```
 
  3. Open a temporal portal to Pixieland and the plane-of-evil.
 
-      $ ./open_a_portal.sh
+    ```bash
+    $ ./open_a_portal.sh
+    ```
 
  4. Upload the magic! ::
 
-      $ ./upload_the_magic.sh
+    ```bash
+    $ ./upload_the_magic.sh
+    ```
 
  5. Alternatively, open a browser to http://localhost:9001 and upload your
     magic there.
