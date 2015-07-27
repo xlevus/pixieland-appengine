@@ -1,5 +1,5 @@
 Pixeland -or- Example App for issue #12165
-------------------------------------------
+==========================================
 
 https://code.google.com/p/googleappengine/issues/detail?id=12165#makechanges
 
@@ -12,7 +12,7 @@ Upload your magic to pixieland. But be warned, if the evil dude gets ahold of
 your magic, he might destroy pixieland and all the unicorns. Oh no!
 
 Installation
-============
+------------
 
  1. Create Virtualenv (because, you know, best practices and all that) ::
 
