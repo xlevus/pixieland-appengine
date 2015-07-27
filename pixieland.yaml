@@ -1,0 +1,35 @@
+# vim: set nospell:
+
+application: qa-for-google  # Do not change. use `fab fabengine.update:application=<target_application>
+module: pixieland
+version: 1            # merge master into 'release' and change version there
+runtime: python27
+api_version: 1
+threadsafe: true
+
+instance_class: F1
+automatic_scaling:
+  min_idle_instances: 1
+  min_pending_latency: 30ms
+  max_pending_latency: 150ms
+
+
+builtins:
+- appstats: on
+
+handlers:
+- url: /.*
+  script: pixieland.app
+
+libraries:
+- name: markupsafe
+  version: "latest"
+- name: setuptools
+  version: "0.6c11"
+- name: jinja2
+  version: "2.6"
+- name: pycrypto
+  version: "2.6"
+- name: ssl
+  version: "latest"
+
